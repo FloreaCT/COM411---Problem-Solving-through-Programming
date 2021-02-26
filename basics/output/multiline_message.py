@@ -1,9 +1,36 @@
 #Display message to standard output in multiple lines of code
 
-print("System Failure Imminent\n")
-sleep(1)
-print("System Reboot has been initialed..\n") ; sleep(1)
-print("...rebooting sensory system") ; sleep(1)
-print("...rebooting output motors") ; sleep(1)
-print("...rebooting hover engine\n") ; sleep(1)
-print("All systems are ONLINE")
+import asyncio
+import time
+
+async def say_after(delay, what):
+    await asyncio.sleep(delay)
+    print(what)
+
+async def main():
+    print(f" System reboot started at {time.strftime('%X')}")
+    await say_after(1, ' ')
+    await say_after(1, '...rebooting sensory system')
+    await say_after(2, '...rebooting output motors')
+    await say_after(3, '...rebooting hover engine\n')
+    await say_after(3, ' ')
+    
+
+    print(f"Reboot succesfuly at {time.strftime('%X')}")
+
+
+    await say_after(1, ' ')
+    await say_after(2, 'All systems are ONLINE')
+    await say_after(2, '')
+
+asyncio.run(main())
+
+import sys
+
+def delay_print(s):
+    for c in s:
+        sys.stdout.write(c)
+        sys.stdout.flush()
+        time.sleep(0.10)
+
+delay_print("I am.......... BEEP!")

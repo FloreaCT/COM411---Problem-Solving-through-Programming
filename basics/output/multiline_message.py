@@ -12,8 +12,8 @@ async def main():
     await say_after(1, ' ')
     await say_after(1, '...rebooting sensory system')
     await say_after(2, '...rebooting output motors')
-    await say_after(3, '...rebooting hover engine\n')
-    await say_after(3, ' ')
+    await say_after(2, '...rebooting hover engine\n')
+    await say_after(2, ' ')
     
 
     print(f"Reboot succesfuly at {time.strftime('%X')}")
@@ -33,4 +33,4 @@ def delay_print(s):
         sys.stdout.flush()
         time.sleep(0.10)
 
-delay_print("I am.......... BEEP!")
+delay_print("\t I am.......... BEEP!")

@@ -1,3 +1,6 @@
+import sys
+import time
+
 print("Please enter a character for the eyes")
 
 eyes = input()

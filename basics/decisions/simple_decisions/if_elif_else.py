@@ -10,4 +10,8 @@ elif direction == 'right':
 elif direction == 'left':
   print('I am painting in the left direction!')
 else:
+<<<<<<< HEAD
   print('Direction unknown, please input the correct direction (up, down, left or right)')
+=======
+  print('Direcction unknown, please input the correct direction (up, down, left or right)')
+>>>>>>> 79e0da0d6453fe0495db75ca76d3a83ed18b47c0

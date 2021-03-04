@@ -1,9 +1,10 @@
 
 import asyncio
-import time
+import time 
 import sys
 
-#Talk with the user
+#Talk with the user. 
+#Piotr, dont ask me what i means because i dont know, all i know its that it works :))
 def delay_print(s):
     for c in s:
         sys.stdout.write(c)

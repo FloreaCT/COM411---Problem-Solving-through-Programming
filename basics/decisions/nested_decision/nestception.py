@@ -1,3 +1,7 @@
+#Questions to ask:
+#1. How to put ' in a normal print?
+#2. How to read capital input also?
+#3. 
 print('''It seems that i've lost my batery. Where should i look for it?
 1. Living room
 2. Bathroom
@@ -6,22 +10,24 @@ print('''It seems that i've lost my batery. Where should i look for it?
 ''')
 #Decide where to look for the battery.
 place = input()
-#For some reason the True statement is not working here. if x in y so i had to put not, weird?
 if place in ['living room', '1', 'Living room']:
   #What is this warning? [mccabe] Cyclomatic complexity too high: 18 (threshold 15)
   print('I am now looking in the the living room.')
   print('''Where in the living room should i look?
   1. Behind the TV.
   2. Under the couch.
-  3. Behind the courtains.
+  3. Behind the curtains.
   4. Under the dog
   ''')
   livingroom = input()
   if livingroom in ['behind the tv', '1', 'Behind the tv', 'behind the TV', 'Behind the TV']:
     print('I am looking behind the TV.')
     print('I have found a video game but not the battery.')
-  elif livingroom in ['behind the courtains', '3', 'Behind the courtains']:
-      print('I am looking ', livingroom,' .')
+  elif livingroom in ['under the couch', 'Under the couch', '2']:
+    print('I am looking under the coach.')
+    print('Found a lot of dust but no battery.')  
+  elif livingroom in ['behind the curtains', '3', 'Behind the curtains']:
+      print('I am looking behind the curtains.')
       print('I found some cats but no battery.')
   elif livingroom in ['under the dog', '4', 'Under the dog']:
     print('I am looking ', livingroom,' .')
@@ -30,7 +36,7 @@ if place in ['living room', '1', 'Living room']:
     print('BEEP: You didnt really think it was there, where you?')
     print('BEEP: Your judgment seems to be unreliable so im going to search it on my own. Searching, searching ..... Found my battery!')
   else:
-   print('I cannot look there. (BEEP is Going out of the room.)')
+   print('BEEP is Going out of the room.')
 elif place in ['bathroom', '2']:
   print('''Where in the bathroom should i look?
   1. Cupboard.
@@ -68,6 +74,8 @@ I'm removing the cat.
 You didnt really think it was there, did you?
 Your judgment seems to be unreliable so im going to search it on my own. Searching, searching ..... Found my battery! 
 ''')
+  else:
+    print('BEEP is going out of the bedroom.')
 elif place in ['kitchen', 'Kitchen', '4']:
   print('''Where in kitchen should i look?
 1. In the fridge.

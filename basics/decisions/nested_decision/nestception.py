@@ -30,7 +30,7 @@ if place in ['living room', '1', 'Living room']:
       print('I am looking behind the curtains.')
       print('I found some cats but no battery.')
   elif livingroom in ['under the dog', '4', 'Under the dog']:
-    print('I am looking ', livingroom,' .')
+    print('I am approaching the dog.')
     print('Woof, woof.')
     print('The dog seems to be angry at you for disturbing him. The dog left and ......')
     print('BEEP: You didnt really think it was there, where you?')
@@ -66,7 +66,7 @@ elif place in ['bedroom', 'Bedroom', '3']:
     print('Found the dog but no battery.')
   elif under in ['under the bed', 'Under the bed', '2']:
     print('Looking under the bed.')
-    print('Found the cat but no battery.')
+    print('Found the dog but no battery.')
   elif under in ['under the cat', 'Under the cat', '3']:
     print('''Approaching carefully the cat.
 The cat seems to be asleep.

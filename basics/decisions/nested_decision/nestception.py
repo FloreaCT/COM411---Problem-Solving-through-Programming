@@ -1,4 +1,4 @@
-print('''It seems that i''ve lost my batery. Where should i look for it?
+print('''It seems that i've lost my batery. Where should i look for it?
 1. Living room
 2. Bathroom
 3. Bedroom
@@ -8,6 +8,7 @@ print('''It seems that i''ve lost my batery. Where should i look for it?
 place = input()
 #For some reason the True statement is not working here. if x in y so i had to put not, weird?
 if place in ['living room', '1', 'Living room']:
+  #What is this warning? [mccabe] Cyclomatic complexity too high: 18 (threshold 15)
   print('I am now looking in the the living room.')
   print('''Where in the living room should i look?
   1. Behind the TV.

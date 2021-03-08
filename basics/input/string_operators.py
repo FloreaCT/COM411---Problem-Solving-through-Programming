@@ -20,3 +20,7 @@ print("\n")
 print("Lives:", 	'\u2665' * lives)
 print("Energy: ",	'\u25C6' * energy)
 print("Shield: ",	'\u26E8'  * shield)
+
+print("Lives:  {'♥' * lives}")
+print("Energy: {'♦' * energy}")
+print("Shield: {'♦' * shield}")

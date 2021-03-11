@@ -111,7 +111,7 @@ elif gps == 2:
         time.sleep(0.06)
   delay_print("You look around and found a screwdriver. You open the panel and pressed the button.""\n")
 elif gps == 3:
-  print("I guess we can do that later. So, where are we?""\n")
+  print("I guess i will have to do it on my own after all..... Forcing GPS reboot.\n")
 else:
   print("GPS has started to reboot, please wait!")
 
@@ -177,12 +177,30 @@ else:
           time.sleep(0.06)
 
   delay_print("You look pretty cool now!""\n")
+  print()
+  print("##########") 
+  print("# O    O #") 
+  print("# ------ #") 
+  print("##########")
+  print()
+  print('Apparently you have chosen the wrong path. How about a redo? I will be for free this time.''\n')
+  print('Redo Yes/No')
+  redo = input()
+  print('Are you sure?')
+  sure = input()
+  print()
+  if (redo == 'yes') and (sure == 'yes'):
+    print('Restarting from the last Checkpoint.')
+  elif (redo == 'no') and (sure == 'yes'):
+    print('Restarting from the last Checkpoint.')
+  else:
+    print('I guess its to late for you now. You are a true Cyborg!')
 
+print()
+print('BEEP looks cool anyway :)')
+print()
 print()
 print("##########") 
 print("# O    O #") 
 print("# ------ #") 
 print("##########")
-
-
-

@@ -4,7 +4,7 @@ import time
 import sys
 
 #Talk with the user. 
-#Piotr, dont ask me what i means because i dont know, all i know its that it works :))
+#Piotr, dont ask me what i means because i dont know, all i know its that it works :)). Now i actually know that def, means defining your own function.
 def delay_print(s):
     for c in s:
         sys.stdout.write(c)
@@ -39,7 +39,7 @@ def delay_print(s):
         time.sleep(0.05)
 delay_print("Te uiti putin confuz la mine, sa activam translatorul universal?""\n") 
 
-#I realized i could use boolean here but after to much reaserch 
+#I realized i could use boolean here but after to much reaserch. BEEp is asking the user to activate the translator. Regardless of their choice, the translator will be activated. 
 
 translator = str(input("Yes/No""\n")).lower()
 if translator in ["Yes" ,"yes" , "y"]:
@@ -97,6 +97,7 @@ def delay_print(s):
         sys.stdout.write(c)
         sys.stdout.flush()
         time.sleep(0.06)
+#BEEP is giving 3 options to the user. Depending on that BEEP will say different things.
 delay_print("Could you reboot the GPS system for me? I'm having trouble analyzing where i am and i believe an manual reboot will do the work.")   
 
 gps = int(input("Please choose what would you like to do:""\n""1. Sure BEEP""\n""2. Could you please guide me?""\n""3. I dont think that's a good idea right now""\n"))
@@ -175,7 +176,7 @@ else:
           sys.stdout.write(c)
           sys.stdout.flush()
           time.sleep(0.06)
-
+#First time anyone is seeing BEEP's face!
   delay_print("You look pretty cool now!""\n")
   print()
   print("##########") 
@@ -183,6 +184,7 @@ else:
   print("# ------ #") 
   print("##########")
   print()
+#The user now has a option to restart from the last checkpoint. At this point, this is fake :) because we dont know to use break yet.
   print('Apparently you have chosen the wrong path. How about a redo? I will be for free this time.''\n')
   print('Redo Yes/No')
   redo = input()

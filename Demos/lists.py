@@ -1,3 +1,36 @@
+#Define an empty list
+fruits = []
+
+#Define a list with items
+
+vegetables = ['Carrot', 'Peas']
+
+#Add itemes to the list
+
+fruits.append("Apple")
+fruits.append('Banana')
+fruits.append('Tomatoe')
+fruits.append('Banana')
+
+print(fruits)
+
+#Remove an item from list
+fruits.remove('Banana')
+
+print(fruits)
+
+#Remove item b index
+del fruits[1]
+print(fruits)
+
+#Insert a value not at the end
+fruits.insert(1, "Pineapple")
+print(fruits)
+
+#Access single element
+print(fruits[0])
+
+
 def get_fruits():
   fruits = []
 

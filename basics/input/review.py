@@ -189,7 +189,7 @@ else:
   print("##########")
   print()
 #The user now has a option to restart from the last checkpoint. At this point, this is fake :) because we dont know to use break yet or whatever command we need to use in order to restart from checkpoint.
-  print('Apparently you have chosen the wrong path. How about a redo? I will be for free this time.''\n')
+  print('Apparently you have chosen the wrong path. How about a redo? It will be for free this time.''\n')
   print('Redo Yes/No')
   redo = input()
   print('Are you sure?')

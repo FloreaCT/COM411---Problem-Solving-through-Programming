@@ -1,14 +1,15 @@
-import json
-
 def shop():
-  with open("items.json") as json_file:
-    items = json.load(json_file)
+  items = {
+    "Eggs": 1.99,
+    "Milk": 0.99,
+    "Cereals": 2.99,
+    "Steak": 4.79,
+    "Beer": 2.99,
+    "Sausage": 1.29,
+    "Vinegar": 2.49,
+    "Bread": 1.49,
+  }
   return items
-
-def save_items(items = {}):
-  json_database = open("items.json", "w")
-  json.dump(items, json_database, indent = 4)
-  json_database.close()
 
 def view_all(products = {}):
   for i in products:

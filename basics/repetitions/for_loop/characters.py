@@ -8,5 +8,3 @@ for x in range(len(characters)):
   print("index 0:", characters[x])
 
 print("Done!")
-
-FOR THE PLANET!

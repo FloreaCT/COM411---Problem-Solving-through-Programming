@@ -85,7 +85,11 @@ def imdb():
       current_rating = m["Rating"][0]
       number_ratings = m["Rating"][1]
       x = rate_a_movie(m["Title"])
+<<<<<<< HEAD
       new_rating = (number_ratings * current_rating + x) / (number_ratings + 1)
+=======
+      new_rating = (number_ratings * current_rating + x) / (number_rating + 1)
+>>>>>>> 4a950ac110b968f17033bbc2dea3c2dd5d07f386
       m["Rating"] = new_rating, number_ratings+1
       imdb[m["Title"]] = m
     elif option == 9:

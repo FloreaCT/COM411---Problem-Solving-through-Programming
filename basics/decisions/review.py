@@ -7,7 +7,6 @@ import sys
 
 #Talk with the user. 
 
-#Piotr, dont ask me what i means because i dont know, all i know its that it works :)). Now i actually know that def, means defining your own function. Soon i will know what the rest means also.
 def delay_print(s):
     for c in s:
         sys.stdout.write(c)

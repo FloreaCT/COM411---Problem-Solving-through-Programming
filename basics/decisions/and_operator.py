@@ -1,7 +1,12 @@
+#Ask user for input
 print('What did i hear?')
 hear = input()
+
+#Ask user for input
 print('What did i see?')
 see = input()
+
+#Display the message
 if (hear == 'hoot') and (see == 'some big eyes'):
   print('I am a little scared but I will continue!')
 #Just interconnecting "or" and "and"

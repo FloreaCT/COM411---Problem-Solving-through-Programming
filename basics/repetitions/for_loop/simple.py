@@ -2,7 +2,7 @@
 print("How many mountains should i display?")
 mountains = int(input())
 
-
+#Print the result
 for x in range(mountains):
   print("           __")
   print("          /  \_  ")

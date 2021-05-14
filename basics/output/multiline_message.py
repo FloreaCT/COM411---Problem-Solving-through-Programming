@@ -8,7 +8,7 @@ async def say_after(delay, what):
     print(what)
 
 async def main():
-    print(f" System reboot started at {time.strftime('%X')}")
+    print(f"System reboot started at {time.strftime('%X')}")
     await say_after(1, ' ')
     await say_after(1, '...rebooting sensory system')
     await say_after(2, '...rebooting output motors')
